@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  min-height: 5vh;
+  background-color: rgb(44, 3, 109);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1 1rem;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background-color: rgb(64, 64, 206);
+}
+
+main {
+  min-height: 90vh;
+  background-color: rgb(72, 89, 184);
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+main ul li {
+  bottom: 10px;
+  border-radius: 7px;
+  background-color: white;
+  margin: 0.5rem 0;
+  width: 20rem;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+main ul li:hover {
+  background-color: rgba(0, 17, 255, 0.774);
+  color: white;
+}
+input {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgba(255, 153, 1, 0.904);
+  color: white;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+.contact-font {
+  color: white;
+}
+footer {
+  color: white;
+  font-size: 18;
+  height: 40px;
+  background-color: darkgreen;
+}

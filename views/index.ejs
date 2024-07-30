@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejs</title>
+  </head>
+  <body>
+    <%- include ("layout/header")%>
+    <main>
+      <form action="/" method="post">
+        <input
+          type="text"
+          placeholder="programming language"
+          name="planguage"
+        />
+        <button type="submit">Add</button>
+      </form>
+
+      <ul>
+        <%if(plNames){ %> <%for(let i = 0; i < plNames.length; i++){%>
+        <li><%= plNames[i] %></li>
+        <%}%> <%}else{%>
+        <p>NO Data Found</p>
+        <%}%>
+      </ul>
+    </main>
+    <%- include("layout/footer")%>
+  </body>
+</html>
